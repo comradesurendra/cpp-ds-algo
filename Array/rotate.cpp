@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+//over here we just reverse the first k element i.e number of rotation then
+//from k +1 to last again we are reverse it then we perform the reverse on whole array
+//the result is k rotated array.
+// O(n)
+ 
 void rotate(int arr[],int n,int size){
     int i=0;
     int j=n-1;

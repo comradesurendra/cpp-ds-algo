@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//over here we are just swaping the last element with first then second last with second...
+//O(n/2)
+
 void reverse(int arr[],int i,int j){
     while(i<j){
         swap(arr[i],arr[j]);
