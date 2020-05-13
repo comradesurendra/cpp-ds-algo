@@ -10,7 +10,7 @@ void leader(int arr[],int size){
             s.push(curr);
         }
     }
-    while(s.empty()){
+    while(!s.empty()){
         cout<<s.top()<<" ";
         s.pop();
     }
