@@ -4,7 +4,7 @@ using namespace std;
 void leader(int arr[],int size){
     stack<int> s;
     int curr = 0;
-    for(int i=size-1;i>0;i--){
+    for(int i=size-1;i>=0;i--){
         if(arr[i]>curr){
             curr = arr[i];
             s.push(curr);
