@@ -10,6 +10,7 @@ int last(vector<int> v,int k){
         int mid = st + (lt-st)/2;
         if(v[mid] == k){
             lastoc=mid;
+            mid=mid+1;
         }
         if(v[mid]<k){
           lt=mid-1;  
@@ -31,5 +32,6 @@ int main(){
         cin>>c;
         v.push_back(c);
     }
+    cout<<last(v,k)<<endl;
     return 0;
 }

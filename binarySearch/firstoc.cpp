@@ -11,6 +11,7 @@ int firstOccur(vector<int>v,int k){
         int mid = st +(end-st)/2;
         if(v[mid] == k){ 
             pos =  mid;
+            mid=mid-1;
         }
         if(v[mid]<k){
             end = mid -1;
